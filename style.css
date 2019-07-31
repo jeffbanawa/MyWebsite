@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "librebaskerville-regular";
+    src: url("fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), url("fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*
+ * Montserrat
+================================================================================ */
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* -------------------------------------------------------------------
+ * links - (_document-setup)
+ * ------------------------------------------------------------------- */
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat-bold, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h01, .h02, .h03, .h04, .h05, .h06 {
+    font-family: "montserrat-bold", sans-serif;
+    color: white;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+#button {
+    min-width: 145px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    width: 10vw;
+    margin-bottom: 1vh;
+}
+
+.header {
+    color: white;
+    background-color: lightgrey;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    padding: 0.5vh;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 45vw;
+}
+
+.main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-image: url("images/DSCF9691.JPG");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+    text-shadow: 2px 1px 0px #7A7A7A;
+     height: 100vh;
+     width: 100vw;
+ }
+
+.about-content {
+    background-color: darkgray;
+    height: 100vh;
+    width: 100vw;
+}
+
+.footer {
+    background-color: grey;
+    height: 10vh;
+}
+
+.highlight {
+    color: tomato;
+}

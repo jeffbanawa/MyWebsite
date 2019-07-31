@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 </head>
 <body>
 <div class="header">MENU</div>
@@ -12,8 +13,8 @@
         <div id="home-intro"><h1>Hello, I'm <span class="highlight">Jeff Banawa</span>.</h1> </div>
         <div class="button-div">
             <div id="button"><a href="#about">ABOUT</a></div>
-            <div id="button"><a href="#about">PROJECTS</a></div>
-            <div id="button"><a href="#about">PHOTOS</a></div>
+            <div id="button"><a href="#projects">PROJECTS</a></div>
+            <div id="button"><a href="#photos">PHOTOS</a></div>
         </div>
     </div>
 </section>
@@ -22,14 +23,29 @@
     <div class="about-content">ABOUT ME</div>
 </section>
 
-<section id="portfolio">
-    <div class="about-content">PORTFOLIO</div>
+<section id="projects">
+    <div class="project-content">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/NBA2600.jpg" alt="NBA 2600" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>NBA 2600</h1>
+                    <p>Basketball game for the VIC-20</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="photos">
-    <div class="about-content">PHOTOS</div>
+    <div class="photos-content">PHOTOS</div>
 </section>
 
 <div class="footer"> This is the footer.</div>
 </body>
+
+<script src = "main.js" type = "text/javascript"></script>
+
 </html>

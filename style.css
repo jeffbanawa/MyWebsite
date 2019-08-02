@@ -105,6 +105,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-image: url("images/DSCF9691.JPG");
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,14 +123,19 @@ h1 {
 
 .project-content {
     background-color: white;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
-    opacity: 1;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-shadow: 2px 1px 0px #7A7A7A;
+}
+
+.project-content.show {
+    animation: enterAnimation 1s forwards 0s ease;
 }
 
 .project-box {
@@ -218,6 +224,17 @@ h1 {
     }
     100%{
         transform: rotate(0) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes enterAnimation{
+    0%{
+        transform: rotate(0) translateY(30%);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0) translateY(0);
         opacity: 1;
     }
 }

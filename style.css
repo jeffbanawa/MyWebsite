@@ -214,6 +214,10 @@ h1 {
     padding: 0 4px;
 }
 
+.row img:hover {
+    animation: imageGrow 0.3s forwards 0s ease-in;
+}
+
 /* Create four equal columns that sits next to each other */
 .column {
     -ms-flex: 24%; /* IE10 */
@@ -294,5 +298,14 @@ h1 {
     100%{
         background: tomato;
         color: white;
+    }
+}
+
+@keyframes imageGrow{
+    0%{
+        transform: rotate(0) scale(1);
+    }
+    100%{
+        transform: rotate(0) scale(1.05);
     }
 }

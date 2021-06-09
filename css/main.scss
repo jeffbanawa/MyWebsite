@@ -20,11 +20,14 @@ img.guitar {
 
 .guitar-body,
 .guitar-strings {
+  display: grid;
   grid-row-start: 1;
   grid-column-start: 1;
 }
 
 svg {
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 path {

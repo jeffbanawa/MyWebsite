@@ -26,6 +26,15 @@ img.guitar {
 
 .guitar-body,
 .guitar-strings {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+svg {
   -ms-grid-row: 1;
       grid-row-start: 1;
   -ms-grid-column: 1;

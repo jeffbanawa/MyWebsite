@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +16,18 @@ img.guitar {
   width: 100vw;
 }
 
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 6rem;
+  font-family: "Oswald", sans-serif;
+  color: orange;
+}
+
 .guitar {
   display: -ms-grid;
   display: grid;
@@ -22,6 +35,31 @@ img.guitar {
       grid-template-columns: 1fr;
   width: 100vw;
   height: 100%;
+}
+
+.name {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.links {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+      grid-template-areas: "header" "link-area";
+  -ms-grid-rows: 70% 30%;
+      grid-template-rows: 70% 30%;
+  justify-items: center;
+}
+
+.links a {
+  -ms-grid-row: link-area;
+      grid-row-start: link-area;
+  width: 8vw;
 }
 
 .guitar-body,

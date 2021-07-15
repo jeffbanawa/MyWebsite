@@ -58,6 +58,7 @@ section {
 
 section:nth-of-type(2) {
   background: #303059;
+  text-align: center;
 }
 
 .top {
@@ -71,18 +72,11 @@ img {
 }
 
 .links {
-  position: absolute;
-  display: grid;
-  height: 100vh;
-  width: 100vw;
-  grid-template-areas:
-    "header"
-    "link-area";
-  grid-template-rows: 70% 30%;
-  justify-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
 }
 
-.links a {
-  grid-row-start: link-area;
-  width: 8vw;
+.links a img {
+  width: 5rem;
 }

@@ -1,39 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 body {
-  display: flex;
   margin: 0;
   height: 100vh;
   background: rgb(33, 33, 33);
+  font-family: 'Fira Sans', sans-serif;
   overflow: hidden;
-  align-items: center;
 }
 
-img.guitar {
-  width: 100vw;
-}
 
 h1 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%);
-  font-size: 6rem;
-  font-family: "Oswald", sans-serif;
-  color: orange;
+  font-size: 4rem;
+  color: #f4f4f4;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 4.5rem;
+  margin: 0;
 }
 
-.guitar {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100vw;
-  height: 100%;
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  color: #cacaca;
 }
 
-.name {
-  grid-row-start: 1;
-  grid-column-start: 1;
+span.name {
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.img-container {
+  width: 70%;
+  height: 34em;
+  overflow: hidden;
+  margin: 10em auto;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  background: #393939;
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}
+
+.content:hover {
+  transform: translateY(-430px);
+}
+
+section {
+  padding: 4em 8em;
+}
+
+section:nth-of-type(2) {
+  background: #303059;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 20rem;
 }
 
 .links {
@@ -51,22 +85,4 @@ h1 {
 .links a {
   grid-row-start: link-area;
   width: 8vw;
-}
-
-.guitar-body,
-.guitar-strings {
-  display: grid;
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-
-svg {
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-
-path {
-  stroke: #5c5eff;
-  fill: none;
-  stroke-width: 3px;
 }

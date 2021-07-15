@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
 
+$small: 640px;
+$medium: 768px;
+$large: 1460px;
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -19,6 +23,11 @@ h1 {
   font-family: 'Fira Sans', sans-serif;
   line-height: 4.5rem;
   margin: 0;
+
+  @media screen and (max-width: $small) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 
 h2 {
@@ -26,6 +35,10 @@ h2 {
   font-size: 1rem;
   letter-spacing: 0.25em;
   color: #cacaca;
+
+  @media screen and (max-width: $small) {
+    font-size: 0.5rem;
+  }
 }
 
 span.name {
@@ -35,10 +48,17 @@ span.name {
 
 .img-container {
   width: 70%;
-  height: 34em;
   overflow: hidden;
   margin: 10em auto;
   position: relative;
+
+  @media screen and (max-width: $small) {
+    margin: 3em auto;
+  }
+
+  @media screen and (min-width: $large) {
+    height: 34em;
+  }
 }
 
 .content {
@@ -54,6 +74,10 @@ span.name {
 
 section {
   padding: 4em 8em;
+
+  @media screen and (max-width: $small) {
+    padding: 1em 2em;
+  }
 }
 
 section:nth-of-type(2) {
@@ -79,6 +103,10 @@ img {
 
 .links a img {
   width: 5rem;
+
+  @media screen and (max-width: $small) {
+    width: 2rem;
+  }
 }
 
 .cursor {

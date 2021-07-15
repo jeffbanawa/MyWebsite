@@ -68,17 +68,24 @@ span.name {
 .content {
   width: 100%;
   background: #393939;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.content:hover {
-  -webkit-transform: translateY(-430px);
-          transform: translateY(-430px);
+@media screen and (min-width: 1460px) {
+  .content {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .content:hover {
+    -webkit-transform: translateY(-430px);
+            transform: translateY(-430px);
+  }
 }
 
 section {
@@ -154,14 +161,18 @@ img {
   opacity: 0;
 }
 
-.img-container:hover .cursor {
-  -webkit-animation: move-cursor 1s ease-in-out;
-          animation: move-cursor 1s ease-in-out;
+@media screen and (min-width: 1460px) {
+  .img-container:hover .cursor {
+    -webkit-animation: move-cursor 1s ease-in-out;
+            animation: move-cursor 1s ease-in-out;
+  }
 }
 
-.img-container:hover .cursor:before {
-  -webkit-animation: move-center 1s ease-in-out;
-          animation: move-center 1s ease-in-out;
+@media screen and (min-width: 1460px) {
+  .img-container:hover .cursor:before {
+    -webkit-animation: move-center 1s ease-in-out;
+            animation: move-center 1s ease-in-out;
+  }
 }
 
 @-webkit-keyframes move-cursor {

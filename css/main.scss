@@ -64,12 +64,17 @@ span.name {
 .content {
   width: 100%;
   background: #393939;
-  transform: translateY(0);
-  transition: transform 1s ease-in-out;
+
+  @media screen and (min-width: $large) {
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+  }
 }
 
 .content:hover {
-  transform: translateY(-430px);
+  @media screen and (min-width: $large) {
+    transform: translateY(-430px);
+  }
 }
 
 section {
@@ -135,11 +140,15 @@ img {
 }
 
 .img-container:hover .cursor {
-  animation: move-cursor 1s ease-in-out;
+  @media screen and (min-width: $large) {
+    animation: move-cursor 1s ease-in-out;
+  }
 }
 
 .img-container:hover .cursor:before {
-  animation: move-center 1s ease-in-out;
+  @media screen and (min-width: $large) {
+    animation: move-center 1s ease-in-out;
+  }
 }
 
 @keyframes move-cursor {
